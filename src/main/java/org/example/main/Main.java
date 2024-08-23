@@ -1,6 +1,7 @@
 package org.example.main;
 
 import org.example.util.InputUtil;
+import org.example.util.MenuUtil;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +12,9 @@ public class Main {
                     + "\n2. Show all student"
                     + "\n3. Find student"
                     + "\n4. Update student");
+
+            MenuUtil.processMenu(menu);
         }
+
     }
 }
