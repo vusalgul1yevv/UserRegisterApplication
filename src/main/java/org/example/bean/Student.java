@@ -1,19 +1,29 @@
 package org.example.bean;
 
 public class Student {
+    private int id;
     private String name;
     private String lastname;
-    private String age;
+    private int age;
     private String className;
 
     public Student() {
     }
 
-    public Student(String name, String lastname, String age, String className) {
+    public Student(int id,String name, String lastname, int age, String className) {
+        this.id = id;
         this.name = name;
         this.lastname = lastname;
         this.age = age;
         this.className = className;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -32,11 +42,11 @@ public class Student {
         this.lastname = lastname;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -48,12 +58,12 @@ public class Student {
         this.className = className;
     }
 
-    @Override
-    public String toString() {
+    public String getAllInformation() {
         return "Student{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", age='" + age + '\'' +
+                ", age=" + age +
                 ", className='" + className + '\'' +
                 '}';
     }

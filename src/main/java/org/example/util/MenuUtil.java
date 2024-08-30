@@ -15,6 +15,9 @@ public class MenuUtil {
         }
     }
 
+    public static int requireId() {
+        return InputUtil.requireNumber("Enter id");
+    }
     public static String requireName() {
         return InputUtil.requireText("Enter name");
     }
